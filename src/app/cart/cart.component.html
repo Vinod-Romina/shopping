@@ -1,0 +1,35 @@
+
+
+<table style="width:40%">
+
+          <th>Order Image</th>
+          <th> Product Id</th>
+          <th>Item Name</th>
+          <th>Rate</th>
+          <th>Quantity</th>
+          <th>Total Rs</th>
+
+            <tr *ngFor="let item of collection">
+                <td><img src="../../assets/{{item.image}}" style="width: 40%; height: 20%;" alt="image">
+                <td>{{item.productid}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.rate}}</td>
+                <td> {{item.quantity}}</td>
+                <td><i> {{item.rate*item.quantity}}</i></td>
+                <td ><i (click)="delete(item.name)" class="fa fa-trash" style="cursor: pointer; font-size:20px;color:red;"></i></td>
+                <i>{{item.total}}</i>
+ 
+            </tr>
+
+            <tr><button class="button" value="submit" (click)="gettotal(collection)">Total</button> ₹{{total}}</tr>
+
+            <!-- <button (click)="gtotal(total.value)"></button> --> <br>
+
+            <button (click)="status()">Pay</button>
+            
+      
+</table>
+    
+            
+    
+

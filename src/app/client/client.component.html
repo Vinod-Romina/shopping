@@ -1,0 +1,34 @@
+
+
+        <table>
+            <td *ngFor="let item of collection">
+                <tr><img src="../../assets/{{item.image}}" style="width: 50%;" alt="image"></tr>
+                <tr>{{item.name}}</tr>
+                <tr>Item Rate {{item.rate}}</tr>
+            
+            
+            <select #lstbx name="number" id="number">
+                <option value='' selected disabled>Select Quantity </option>
+                <option >1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option >5</option>
+              </select> <br> 
+
+              <button class="btn btn-primary" (click)="post(item.image,item.name, lstbx.value, item.productid, item.rate )" 
+              > Cart </button>
+           </td>
+
+            <button class="btn btn-primary"(click)="gotocart()">View Cart</button> <br>
+        
+            <button (click)="pay()">Pay</button>
+      
+</table>
+
+
+
+
+
+
+      

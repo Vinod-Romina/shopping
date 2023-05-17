@@ -1,0 +1,66 @@
+
+<div>
+    <form [formGroup]="admin">
+        <h2 class="text-center">Admin Panel</h2>
+        
+        <div class="form-group">
+            <input type="file" #image class="form-control" formControlName="image" (change)="onfileselected($event)">
+        </div><br>
+    
+
+        <div class="form-group">
+            <input type="text" #name class="form-control" formControlName="name" placeholder="Enter Item Name">
+        
+        </div><br>
+
+        <div class="form-group">
+            <input type="number" #productid class="form-control" formControlName="productid" placeholder="Enter Product ID">
+        </div><br>
+        
+        <div class="form-group">  
+    
+            <input type="text" #rate class="form-control" formControlName="rate" placeholder="Enter Rate">
+        
+        </div><br>
+        
+        <div class="form-group">
+        
+            <input type="text" #quantity class="form-control" formControlName="quantity" placeholder="Enter Quantity">
+        
+        </div><br>
+
+        <!-- <button type="submit">Submit</button> -->
+
+        
+        <button type="submit" (click)="upload(name.value, rate.value, quantity.value, productid.value)">Submit</button>
+
+        <table style="width:100%">
+            <tr>
+              <th>Image </th>
+              <th>Name</th>
+              <th>Product ID</th>
+              <th>Rate</th>
+              <th>Quantity</th>
+              
+            </tr>
+            <tr *ngFor="let item of collection">
+              <td>{{item.image}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.productid}}</td>
+              <td>{{item.rate}}</td>
+              <td>{{item.quantity}}</td>
+                <td ><i class="fa fa-trash" style="cursor: pointer; font-size:20px;color:red;" 
+                    (click)="deletedata(item.name)"></i></td>
+              
+            </tr>
+          </table>
+
+        
+
+        
+
+
+    </form>
+    </div>
+
+

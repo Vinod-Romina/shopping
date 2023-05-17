@@ -1,0 +1,116 @@
+{
+  "admin": [
+    {
+      "name": "Apple",
+      "productid": "66",
+      "image": "apple.jpg",
+      "rate": "10",
+      "quantity": "5",
+      "id": 1
+    },
+    {
+      "name": "Mango",
+      "productid": "77",
+      "image": "mango.jpg",
+      "rate": "20",
+      "quantity": "5",
+      "id": 3
+    },
+    {
+      "name": "Chickoo",
+      "productid": "88",
+      "image": "chickoo.jpg",
+      "rate": "45",
+      "quantity": "10",
+      "id": 4
+    },
+    {
+      "name": "Lemon",
+      "productid": "33",
+      "image": "lemon.jpg",
+      "rate": "80",
+      "quantity": "10",
+      "id": 6
+    }
+  ],
+  "cart": [
+    {
+      "image": "apple.jpg",
+      "name": "Apple",
+      "quantity": "2",
+      "productid": "66",
+      "rate": "10",
+      "sessionid": "453f00f5-95d6-4fa9-99d2-72d95738ce13",
+      "date": "May 03 2023",
+      "time": "12:40:20 PM",
+      "id": 1
+    },
+    {
+      "image": "chickoo.jpg",
+      "name": "Chickoo",
+      "quantity": "3",
+      "productid": "88",
+      "rate": "45",
+      "sessionid": "453f00f5-95d6-4fa9-99d2-72d95738ce13",
+      "date": "May 03 2023",
+      "time": "12:40:30 PM",
+      "id": 2
+    },
+    {
+      "image": "apple.jpg",
+      "name": "Apple",
+      "quantity": "2",
+      "productid": "66",
+      "rate": "10",
+      "sessionid": "9fb73d08-1645-442d-a8b7-1b5bb44481d3",
+      "date": "May 03 2023",
+      "time": "12:55:28 PM",
+      "id": 3
+    },
+    {
+      "image": "apple.jpg",
+      "name": "Apple",
+      "quantity": "2",
+      "productid": "66",
+      "rate": "10",
+      "sessionid": "4147d057-615a-4f46-b9b9-da9039265cd6",
+      "date": "May 03 2023",
+      "time": "12:57:09 PM",
+      "id": 4
+    },
+    {
+      "image": "chickoo.jpg",
+      "name": "Chickoo",
+      "quantity": "2",
+      "productid": "88",
+      "rate": "45",
+      "sessionid": "4147d057-615a-4f46-b9b9-da9039265cd6",
+      "date": "May 03 2023",
+      "time": "12:57:31 PM",
+      "id": 5
+    },
+    {
+      "image": "apple.jpg",
+      "name": "Apple",
+      "quantity": "3",
+      "productid": "66",
+      "rate": "10",
+      "sessionid": "630d5754-9869-4086-9ba4-b7e1c40f017f",
+      "date": "May 04 2023",
+      "time": "10:14:48 AM",
+      "id": 6
+    },
+    {
+      "image": "chickoo.jpg",
+      "name": "Chickoo",
+      "quantity": "2",
+      "productid": "88",
+      "rate": "45",
+      "sessionid": "195caddd-44d1-4476-a232-e45cc3f6fc25",
+      "date": "May 04 2023",
+      "time": "10:23:12 AM",
+      "id": 7
+    }
+  ],
+  "total": []
+}
